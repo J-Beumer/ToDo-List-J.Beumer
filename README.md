@@ -4,13 +4,20 @@ mein erstes kleines und vollfunktionsfähiges Programm, eine einfache ToDo-Liste
 Ich habe eine einfache To-Do-Liste-Anwendung mit Python erstellt. Mit dieser Anwendung lassen sich Aufgaben hinzufügen, entfernen, als erledigt markieren und die Reihenfolge der Aufgaben ändern, entweder über die entsprechenden Button am linken Rand, oder per Drag&Drop mit der Maus. Während der Erstellung dieser To-Do-Liste habe ich u.a. auf Hilfe durch Chat GPT zurückgegriffen, um die richtigen Funktionen zu ermitteln, die ich benötige, um die zu Beginn des Projekts festgelegten Features umzusetzen. Chat GPT hat mir auch dabei geholfen, den Code auf Logikfehler und etwaige Bugs zu überprüfen.
 Das größte Problem, das ich während der Programmierung hatte, war es, die Drag&Drop Funktion vernünftig zu implementieren. Zunächst überlagerte Drag&Drop die Möglichkeit eine andere Aufgabe in der Aufgabenliste auszuwählen, die erste Aufgabe blieb angewählt und wurde mit jedem Mausklick nur an die entsprechende Position verschoben.
 Inzwischen funktionieren aber alle Features, die ich für die ToDo-Liste geplant hatte, wie beabsichtigt.
+
 Features der ToDo Liste (Soll)
-Aufgabe hinzufügen: Die ToDo Liste soll ein Eingabefeld haben und Aufgaben sollen sich entweder per Enter Taste zur Aufgabenliste hinzufügen lassen, oder wenn man auf den Button “Aufgaben hinzufügen” klickt.
-Aufgaben in der Aufgabenliste per Mausklick anwählen: Es soll möglich sein Aufgaben per Mausklick auszuwählen
-Aufgabe entfernen: Die ausgewählte Aufgabe wird über den Klick auf den Button “Aufgabe entfernen” aus der Aufgabenliste entfernt.
-Aufgabe erledigen: Jede Aufgabe hat einen Status, der angibt, ob sie erledigt ist oder nicht. Erledigte Aufgaben erhalten die Endung “ (Erledigt)". Per Klick auf den Button "Aufgabe erledigt" lässt sich für die gerade ausgewählte Aufgabe der Status von erledigt zu offen und vice versa umschalten.
-Aufgabe verschieben: Es soll möglich sein, die Reihenfolge der Aufgaben in der Aufgabenliste zu verändern, entweder über die beiden Buttons links von der Aufgabenliste (Pfeil hoch und runter), oder per Drag&Drop. Wenn man einen der beiden Button anklickt, wird die Aufgabe entsprechend entweder um eine Position hoch oder runter verschoben in der Aufgabenliste, die Aufgabe bleibt weiter ausgewählt.
-Drag&Drop: Die zweite Möglichkeit, um eine Aufgabe zu verschieben, ist per Drag&Drop. Dies wird initiiert, wenn man auf eine Aufgabe in der Aufgabenliste klickt und die linke Maustaste gedrückt hält. Die Aufgabe soll an dem Platz in der Aufgabenliste platziert werden, wo der Maus-Cursor gerade ist, während man die Maustaste loslässt.
+
+ - Aufgabe hinzufügen: Die ToDo Liste soll ein Eingabefeld haben und Aufgaben sollen sich entweder per Enter Taste zur Aufgabenliste hinzufügen lassen, oder wenn man auf den Button “Aufgaben hinzufügen” klickt.
+  
+ - Aufgaben in der Aufgabenliste per Mausklick anwählen: Es soll möglich sein Aufgaben per Mausklick auszuwählen
+  
+ - Aufgabe entfernen: Die ausgewählte Aufgabe wird über den Klick auf den Button “Aufgabe entfernen” aus der Aufgabenliste entfernt.
+  
+ - Aufgabe erledigen: Jede Aufgabe hat einen Status, der angibt, ob sie erledigt ist oder nicht. Erledigte Aufgaben erhalten die Endung “ (Erledigt)". Per Klick auf den Button "Aufgabe erledigt" lässt sich für die gerade    ausgewählte Aufgabe der Status von erledigt zu offen und vice versa umschalten.
+  
+ - Aufgabe verschieben: Es soll möglich sein, die Reihenfolge der Aufgaben in der Aufgabenliste zu verändern, entweder über die beiden Buttons links von der Aufgabenliste (Pfeil hoch und runter), oder per Drag&Drop. Wenn    man einen der beiden Button anklickt, wird die Aufgabe entsprechend entweder um eine Position hoch oder runter verschoben in der Aufgabenliste, die Aufgabe bleibt weiter ausgewählt.
+  
+ - Drag&Drop: Die zweite Möglichkeit, um eine Aufgabe zu verschieben, ist per Drag&Drop. Dies wird initiiert, wenn man auf eine Aufgabe in der Aufgabenliste klickt und die linke Maustaste gedrückt hält. Die Aufgabe soll     an dem Platz in der Aufgabenliste platziert werden, wo der Maus-Cursor gerade ist, während man die Maustaste loslässt.
 
 verwendete Funktionen
 1. add_task(event=None)
